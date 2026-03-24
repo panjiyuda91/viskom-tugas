@@ -13,9 +13,8 @@ def skalalisasi(path_gambar, output_gambar, skala):
     pixels_lama = img.load()
     pixels_baru = img_baru.load()
 
-    print(f"Memproses Skalalisasi (Skala {skala}x)...")
+    print(f"(Skala {skala}x)...")
     
-    # Rasio pemetaan dari gambar baru ke gambar lama
     rasio_x = lebar_lama / lebar_baru
     rasio_y = tinggi_lama / tinggi_baru
     
@@ -29,7 +28,7 @@ def skalalisasi(path_gambar, output_gambar, skala):
             pixels_baru[x_baru, y_baru] = pixels_lama[x_lama, y_lama]
             
     img_baru.save(output_gambar)
-    print(f"Selesai! Disimpan sebagai {output_gambar} (Resolusi: {lebar_baru}x{tinggi_baru})")
+    print(f"{output_gambar} (Resolusi: {lebar_baru}x{tinggi_baru})")
 
 if __name__ == "__main__":
     skalalisasi("gambar.jpg", "hasilSkala.jpg", 2.0)
