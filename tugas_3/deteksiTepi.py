@@ -49,5 +49,5 @@ def konvolusi_tepi(path_gambar, output_gambar, metode="sobel"):
     print(f"Selesai! Disimpan sebagai {output_gambar}")
 
 if __name__ == "__main__":
-    konvolusi_tepi("gambar.jpg", "tepiSobel.jpg", metode="sobel")
-    konvolusi_tepi("gambar.jpg", "tepiPrewitt.jpg", metode="prewitt")
+    konvolusi_tepi("chess.png", "tepiSobel.jpg", metode="sobel")
+    konvolusi_tepi("chess.png", "tepiPrewitt.jpg", metode="prewitt")

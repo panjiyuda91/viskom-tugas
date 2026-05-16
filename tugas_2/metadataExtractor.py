@@ -52,4 +52,4 @@ def analisis_citra(path_gambar):
 
 if __name__ == "__main__":
     # Pastikan file 'gambar.jpg' berada di folder yang sama dengan script ini
-    analisis_citra("gambar.jpg")
+    analisis_citra("hasilSkala.jpg")
